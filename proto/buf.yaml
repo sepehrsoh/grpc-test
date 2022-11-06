@@ -1,0 +1,4 @@
+version: v1
+name: buf.build/sepehrsoh/grpc_test
+deps:
+  - buf.build/googleapis/googleapis

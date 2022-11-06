@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package grpc_test.v1;
+import "google/api/annotations.proto";
+import "messages/hello.proto";
+
+option go_package = "grpc_test/proto";
+option java_package = "grpc_test";
+
+
+service Hello {
+  rpc SayHello (messages.hello.HelloRequest) returns (messages.hello.HelloReply) {
+    option (google.api.http) = {
+      post: "/hi"
+      body: "*"
+    };
+  }
+}
+

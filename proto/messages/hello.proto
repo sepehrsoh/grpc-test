@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package messages.hello;
+import "google/api/annotations.proto";
+
+option go_package = "grpc_test/proto/build/go/messages";
+option java_package = "grpc_test.hello";
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
