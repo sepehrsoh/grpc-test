@@ -45,7 +45,7 @@ clean-proto:
 	-rm -rf ./proto/build
 
 build-proto:
-	-cd ./proto && proxychains4 buf generate
+	-cd ./proto && buf generate
 	@echo "grpc done"
 
 GOCMD=go
