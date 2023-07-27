@@ -42,7 +42,7 @@ The REST gateway wraps around the gRPC server, allowing you to make RESTful requ
 For example, to make a POST request to the server using `curl`:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"message": "Hello gRPC!"}' http://localhost:9000/v1/greet
+curl -X POST -H "Content-Type: application/json" -d '{"Name": "Hello gRPC!"}' http://localhost:9000/hi
 ```
 
 ### Generating Code
